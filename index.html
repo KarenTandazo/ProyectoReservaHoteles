@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miami Season - Reservación de hoteles</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+<!-- ENCABEZADO -->
+    <header>
+        <div id="encabezado">
+            <div id="padreencabezado">
+                <div class="hijoencabezado">
+                    <div>  
+                        <h1 id="logo">
+                            <img id="imagenlogo" src="./ASSETS/IMAGENES/LOGOMIAMI.png" alt="LOGOMIAMI">
+                            <img id="textologo" src="./ASSETS/IMAGENES/MIAMITRAVEL.png" alt="MIAMITRAVEL">
+                        </h1>
+                    </div> 
+                </div> 
+                <div id="hijo2" class="hijoencabezado">
+                    <div class="hijitoencabezado menu">   
+                        <a href="" class="aencabezado">LOG IN</a> 
+                        <span class="aencabezado"> | </span>
+                        <a href="" class="aencabezado">SIGN UP</a>
+                    </div> 
+                    <div class="hijitoencabezado menu">   
+                        <a href="" class="aencabezado">
+                            <i class="fa-solid fa-globe"></i>
+                        </a>
+                        <span class="aencabezado"> | </span>
+                        <a href="" class="aencabezado">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                        </a>
+                    </div> 
+                    <div class="hijitoencabezado">   
+                        <img id="imgmenu" src="./ASSETS/ICONOS/Group 254.svg" alt="Menu">
+                    </div>  
+                </div>    
+            </div>
+        </div>
+    </header>
+    <main>
+<!-- PORTADA -->
+        <section>
+            <div id="superpadreportada">
+               <div id="padreportada">
+    <!-- SISTEMA DE BÚSQUEDA -->
+                    <section>
+                        <h2>Reserva tu hotel</h2>
+                        <div id="buscador">
+                            <div>
+                                <div class="textoFecha">Check-In:</div>
+                                <input type="date" id="fecha-inicio" class="calendario" placeholder="e.g., 2024-07-26">
+                            </div>
+                            <div>
+                                <div class="textoFecha">Check-Out:</div>
+                                <input type="date" id="fecha-fin" class="calendario" placeholder="e.g., 2024-07-28">
+                            </div>
+                            <div id="toggle">
+                                <label for="toggle-switch">Cliente con recompensas (Rewards):</label>
+                                <label class="switch">
+                                    <input type="checkbox" id="toggle-switch">
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </section>
+                    <button onclick="mejorOpcionHotel()" id="buscar">
+                        <i id="lupa" class="fa-solid fa-magnifying-glass"></i>
+                        <span id="textoboton">Buscar</span>
+                    </button>
+               </div>
+           </div>
+        </section>
+<!-- RESULTADO -->
+        <section id="sectionResultados" style="border-bottom: 3px solid #DF991B;">
+            <div id="result"></div>
+        </section> 
+<!-- HOTELES -->
+    <section>
+        <div>
+            <div class="tituloSection sectionHoteles">
+                <span>Hoteles</span>
+            </div>
+        </div>
+        <div id="contenedorHoteles">
+            <div class="detalleHoteles"></div>
+        </div>
+    </section>
+    </main>
+<!-- FOOTER -->
+    <footer>
+        <div id="padrefooter">
+            <div id="hijofooter1" class="hijofooter">
+                <a id="logofooter" class="textofooter" href=""><img src="./ASSETS/IMAGENES/MIAMITRAVEL.png" alt="LOGOMIAMI" style="max-height: 20px;">
+                </a>
+                <a id="ayuda" class="textofooter" href="">Centro de Ayuda</a>
+                <a class="textofooter" href="">Opciones de cancelación</a>
+            </div>
+            <div id="hijofooter2" class="hijofooter">
+                <a class="textofooter" href="">Lugares turísticos</a>
+                <a class="textofooter" href="">Restaurantes</a>
+                <a class="textofooter" href="">Vuelos</a>
+            </div>
+            <div id="hijofooter3" class="hijofooter">
+                <a class="textofooter" href="">Historias de viaje</a>
+                <a id="cruceros" class="textofooter" href="">Cruceros</a>
+                <a class="textofooter" href="">Contact us</a>
+            </div>
+            <div id="hijofooter4" class="hijofooter">
+                <span class="textofooter" >Contáctanos</span>
+                <a id="numero" class="textofooter" href="">+1 (305) 288-0970</a>
+                <a class="textofooter" href="">contactus@miamitravel.com</a>
+            </div>
+        </div>
+        <div id="copyrightsection">
+            <div>
+            </div>
+            <small id="copyright">Copyright <i class="fa-regular fa-copyright"></i> 2024</small>
+            <div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./SRC/script.js"></script>
+</html>

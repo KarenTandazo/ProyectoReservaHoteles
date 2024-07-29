@@ -1,0 +1,355 @@
+/* ENCABEZADO */
+body{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+#encabezado{
+    width: 100%; 
+    border-color: #f9f9f9b5;
+    color: #ffffff;
+    display: inline-block;
+    background-color: #7a79778a;
+}
+#padreencabezado{
+    display: flex;
+    justify-content: center;
+}
+.hijoencabezado{
+    width: 50%;
+}
+#logo{
+    margin: 1%;
+    padding-left: 5%;
+}
+#hijo2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.menu{
+    padding-right: 6%;
+}
+.fa-solid{
+    font-size: 20px;
+}
+.hijitoencabezado{
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: 390;
+    font-size: 15px;
+    letter-spacing: 0.5px
+}
+.aencabezado{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding-left: 10px;
+}
+#imgmenu{
+    width: 30px;
+    border-left-width: 1;
+    border-left-style: solid;
+    border-left-width: thin;
+    border-left-color:#FFFFFF;
+    padding: 0 20px;
+}
+#imagenlogo{
+    max-height: 50px;
+}
+#textologo{
+    max-height: 20px;
+    margin-bottom: 10px;
+}
+/* PORTADA */
+#superpadreportada{
+    position: relative;
+}
+#padreportada{   
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../ASSETS/IMAGENES/MIAMIBEACH.jpg);
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-size: 12px;
+    color: #fff;
+}
+h2{
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 3%;
+}
+.textoFecha{
+    padding-left: 3%;
+    font-size: 14px;
+}
+#buscador{
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.30fr;
+}
+#buscar{
+    padding: 5px;
+    margin: 3% 40%;
+    width: 20%;
+    height: 50%;
+    border-radius: 100px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    justify-items: center;
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+    border-width: thin;
+    display: flex;
+    color: #ffffff;
+    text-align: center; 
+}
+#buscar:hover{
+    background-color: #df9a1bb1;
+    color: #ffffff;
+}
+#buscar::placeholder{
+    text-align: center;
+}
+#lupa{
+    padding: 5px;
+}
+#textoboton{
+    padding: 5px 0 5px 8px;
+}
+.calendario{
+    width: 80%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ffffff;
+    background-color: #ffffffc2;
+    border-radius: 100px;
+    color: #000000;
+}
+#result{
+    justify-items: center;
+}
+#toggle{
+    display: flex;
+    flex-direction: column;
+}
+.switch {
+    position: relative;
+    width: 30px;
+    height: 20px;
+    margin-top: 10px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: #DF991B;
+}
+input:checked + .slider:before {
+    transform: translateX(10px);
+}
+h3{
+    color: #DF991B;
+    margin: 3%;
+    text-align: center;
+    font-size: 22px;
+}
+#mejorOpcion{
+    color: #ffffff;
+    margin: 3%;
+    text-align: center;
+    font-size: 22px;
+}
+h4{
+    padding: 3% 20%;
+    font-size: 16px;
+    margin: 0;
+}
+.textoRespuesta{
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-size: 22px;
+    color: #ffffff;
+    text-align: center;
+}
+.nombreHotel{
+    background-color:#6d6e6ef5;
+}
+.titulosHotel{
+    background-color: #e4e4e4;
+}
+/* HOTELES - RESPUESTA */
+#sectionResultados{
+    background-color: #6d6e6ef5;
+}
+.sectionHoteles{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    justify-items: center;
+}
+.tituloSection{
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    margin-top: 4%;
+    color: #DF991B;
+    font-weight: bold;
+}
+#contenedorHoteles{
+    justify-items: stretch;
+    margin: 0 5%;
+}
+.imagen{
+    width: 30%; 
+    height: auto; 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+.respuesta{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+    margin: 3% 10%;
+    border: 2px solid #DF991B;
+    border-radius: 10px;
+    background-color: #fff;
+}
+#respuesta1{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+    margin: 3% 10%;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    background-color: #df9a1baa;
+}
+.imagensalta{
+    height: 240px;
+    text-decoration: none;
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    align-items: end;
+    justify-items: stretch;
+    margin: 3% 5%;
+}
+#card{
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+}
+.opcioneslujo2{
+    width: 100%;
+}
+.ubicacion{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    padding: 2% 0;
+    text-align: center;
+    margin: 0;
+}
+/* TABLA HOTELES */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 4% auto;
+}
+th, td {
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+}
+th {
+    font-weight: bold;
+}
+/* FOOTER */
+#padrefooter{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+    background-color: #7a7977;
+    column-gap: 2%;
+    row-gap: 10%;
+    justify-items: stretch;
+    padding: 4% 5%;
+}
+.textofooter{
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+}
+#hijofooter1{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+#hijofooter2{
+    margin-left: 30%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+#hijofooter3{
+    margin-left: 30%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+#hijofooter4{
+    justify-items: end;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+#logofooter{
+    margin-bottom: 8%;
+}
+#cruceros{
+    margin-bottom: 10%;
+}
+#numero{
+    font-size: 150%;
+}
+#copyrightsection{
+    display: grid;
+    grid-template-columns: 5% auto 5%;
+    background-color: #7a7977;
+}
+#copyright{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    border-top: 1px solid white;
+    padding: 2% 0;
+}
+#ayuda{
+    padding-bottom: 10px;
+}
